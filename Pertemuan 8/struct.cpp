@@ -3,12 +3,12 @@
 #include<vector>
 using namespace std;
 
-struct Alamat{
+struct Alamat{ // struct alamat berfungsi untuk menyimpan data berupa alamat lengkap serprti jalan,kota,kode_pos
     string jalan,kota;
     int kode_pos;
 };
 
-struct mahasiswa{
+struct mahasiswa{ // struct mahasiswa berfungsi menyimpan data nama, umur, ipk, dan alamat
     string nama;
     int umur;
     float ipk;
@@ -26,7 +26,8 @@ int main(){
 
     //cout << "alamat : " << mhs1.alamat.jalan <<", "<< mhs1.alamat.kota<< ", "<< mhs1.alamat.kode_pos;
 
-    vector<mahasiswa> MAHASISWA;
+    vector<mahasiswa> MAHASISWA; // digunakan untuk menyimpan banyak data mahasiswa secara dinamis (sesuai input dari pengguna).
+
     int n;
     cout << "Masukkan banyak mahasiswa : ";
     cin >> n;
@@ -34,7 +35,7 @@ int main(){
     for (int i = 0; i < n; i++){
         cout << "Mahasiswa " << i + 1 << endl;
 
-        cin.get();
+        cin.get(); // membuang newline agar tidak mengganggu getline berikutnya
         cout << "Masukkan nama: ";
         getline(cin, mhs1.nama);
 
@@ -44,7 +45,7 @@ int main(){
         cout << "Masukkan ipk : ";
         cin >> mhs1.ipk;
 
-        MAHASISWA.push_back(mhs1);
+        MAHASISWA.push_back(mhs1); // menambahkan data mahasiswa di bagian akhir
     }
 
     for (int i = 0; i < n; i++){
