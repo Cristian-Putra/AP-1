@@ -20,7 +20,7 @@ int main(){
 
     //Deklarasi pointer
     int number = 35;
-    int *pointer_number = &number;
+    int *pointer_number = &number; // mengakses nilai dari alamat yang ditunjuk
 
     cout << "Isi variabel number = " << number << endl;
     cout << "Alamat memori variabel number = " << &number << endl;
@@ -76,7 +76,7 @@ int main(){
     cout << "Isi variabel ptr_pointer_score " << pointer_score << " dan isi variabel yang ditunjuk oleh ptr_pointer score " << **ptr_pointer_score << " alamat memori ptr_score " << &ptr_pointer_score << endl;*/
 
     //Dynamic Pointer
-    /*int *ptr = new int;
+    /*int *ptr = new int; // new int membuat memori baru
     *ptr = 30;
     cout << "Isi variabel ptr = " << *ptr << " alamat variabel ptr = " << &ptr << endl;
 
