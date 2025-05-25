@@ -19,7 +19,7 @@ int main(){
     system("cls");
 
     //Deklarasi pointer
-    int number = 35;
+    int number = 35; // inisialisiasi variabel number dengan tipe data integer
     int *pointer_number = &number; // mengakses nilai dari alamat yang ditunjuk
 
     cout << "Isi variabel number = " << number << endl;
