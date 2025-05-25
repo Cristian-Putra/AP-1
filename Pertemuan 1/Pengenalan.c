@@ -2,11 +2,11 @@
 #include <conio.h>
 
 int main() {
-    system("cls");
+    system("cls"); // untuk membersihkan layar
     char nama[50];
-    int nim;
-    char kom[2];
-    float ip;
+    int nim; // tipe data bilangan bulat
+    char kom[2]; // tipe data dengan 1 karakter
+    float ip; // tipe data bilangan desimal
 
     printf("Hello World\n"); // fungsi keluaran pada C
 
@@ -16,7 +16,8 @@ int main() {
     printf("Masukkan nim : ");
     scanf("%d", &nim); // fungsi masukan pada C
 
-    getchar();
+    getchar(); //membaca satu karakter dari input standar dari keyboard
+
 
     printf("Masukkan kom : ");
     gets(kom); 
@@ -35,5 +36,5 @@ int main() {
     printf("IP : %f\n", ip);
 
     printf("press any button to continue...");
-    getch(); 
+    getch(); //sintaks yang membaca inputan keyboard tanpa menampilkannya di layar
 }
