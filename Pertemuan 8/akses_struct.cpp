@@ -2,10 +2,10 @@
 #include<string>
 using namespace std;
 
-struct mahasiswa{
-    string nama;
-    int umur;
-    float ipk;
+struct mahasiswa{ // struct mahasiswa yang berisi data seperti nama, umur, ipk
+    string nama;// nama tipe data string
+    int umur; // umur tipe data integer
+    float ipk; // ipk tipe data float
 };
 
 int main(){
@@ -22,7 +22,8 @@ int main(){
     cout << "Umur : " << mhs1.umur << endl;
     cout << "ipk : " << mhs1.ipk << endl;*/
 
-    mahasiswa *ptrmhs = &mhs1;
+    mahasiswa *ptrmhs = &mhs1; // pointer ke struct mahasiswa, yaitu ptrmhs, dan menunjukkannya ke alamat dari mhs1.
+
     cout << "Akses dengan -> : " << endl;
     cout << "Nama : " << ptrmhs->nama << endl;
     cout << "Umur : " << ptrmhs->umur << endl;
