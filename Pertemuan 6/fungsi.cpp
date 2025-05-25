@@ -8,10 +8,10 @@ void tampilkan_pesan(){
 
 // fungsi dengan nilai balikan 
 int tambah(int a, int b){
-    return a + b;
+    return a + b; // mengembalikan hasil penjumlahan a dengan b
 }
 
-// fungsi overload
+// fungsi overload,fungsi dengan nama sama tapi parameter beda (tipe data).
 int kali(int a, int b){
     return a * b;
 }
@@ -29,7 +29,7 @@ int faktorial(int n){
     }
 }
 
-int main(){
+int main(){ // fungsi utama
     system("cls");
 
     //menggunakan fungsi tanpa nilai balikan
@@ -47,7 +47,7 @@ int main(){
     cout << "hasil perkalian (int) : " << hasil_kali<< endl;
     cout << "hasil perkalian (double) : " << hasil_kali_double << endl;
 
-    //menggunakan fungsi rekursif
+    //menggunakan fungsi rekursif, fungsi yang memanggil dirinya sendiri
     int angka = 5;
     cout << "faktorial dari "<< angka << " adalah " << faktorial(angka) <<endl;
 
