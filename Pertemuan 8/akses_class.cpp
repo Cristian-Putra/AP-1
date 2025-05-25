@@ -3,16 +3,17 @@ using namespace std;
 
 class ContohAkses {
     private:
-    int privateVar;
+    int privateVar; // hanya bisa diakses dari dalam class itu sendiri.
 
     protected:
-    int protectedVar;
+    int protectedVar; //bisa diakses oleh class sendiri dan class turunan.
 
     public:
-    int publicVar;
+    int publicVar; //bisa diakses dari mana saja.
 
     // Constructor
     ContohAkses(){
+        //menginisialisasi nilai awal
         privateVar = 1;
         protectedVar = 2;
         publicVar = 3;
@@ -35,7 +36,7 @@ class Turunan : public ContohAkses{
     }
 };
 
-int main(){
+int main(){ // program utama
     system("cls");
 
     ContohAkses obj;
